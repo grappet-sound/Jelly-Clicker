@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gameboard">
+
+        <div class="main">
+            <div class="UI">
+                <div id="coinicon"></div>
+                <div id="coin">1000</div>
+                <button id="save" onclick="saveData();">SAVE</button>
+            </div>
+            <div id="display">
+
+            </div>
+        </div>
+
+        <div class="shop">
+            <div class="item">
+                <button class="icon" id="star" onclick="cpcItem(100, 3);"></button>
+                <div class="info">100c<br>coin per click = 3</div>
+            </div>
+            <div class="item">
+                <button class="icon" id="moon" onclick="cpcItem(600, 10);"></button>
+                <div class="info">600c<br>coin per click = 10</div>
+            </div>
+            <div class="item">
+                <button class="icon" id="sun" onclick="cpcItem(1200, 15);"></button>
+                <div class="info">1200c<br>coin per click = 15</div>
+            </div>
+            <div class="item">
+                <button class="icon" id="wrist" onclick="cpsItem(200, 2);"></button>
+                <div class="info">200c<br>coin per second = 2</div>
+            </div>
+            <div class="item">
+                <button class="icon" id="desk" onclick="cpsItem(1000, 5);"></button>
+                <div class="info">1000c<br>coin per second = 5</div>
+            </div>
+            <div class="item">
+                <button class="icon" id="digit" onclick="cpsItem(2000, 7);"></button>
+                <div class="info">2000c<br>coin per second = 7</div>
+            </div>
+        </div>
+
+        <div class="jellyshop">
+            <div class="jellyitem">
+                <button class="jellyicon squ" onclick="square();"></button>
+                <div class="jellyinfo">Basic jelly, buy for style!<br>5000c</div>
+            </div>
+            <div class="jellyitem">
+                <button class="jellyicon cir" onclick="circle();"></button>
+                <div class="jellyinfo">Advanced jelly, makes coin per sec 2x faster!<br>10000c</div>
+            </div>
+            <div class="jellyitem">
+                <button class="jellyicon tri" onclick="triangle();"></button>
+                <div class="jellyinfo">Master jelly, makes current amount of coin triple!<br>90000c</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
